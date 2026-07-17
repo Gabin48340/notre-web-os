@@ -1,7 +1,7 @@
 import React from 'react';
 import { useOS } from '../context/OSContext';
 import Window from './Window';
-
+import AnnoncesApp from './AnnoncesApp';
 export default function Desktop() {
     const { windows } = useOS();
 
@@ -17,7 +17,7 @@ export default function Desktop() {
         }}>
             {/* Fenêtre de l'application Annonces */}
             <Window id="annonces" title="📢 Tableau d'annonces">
-                <p>Bienvenue sur le tableau d'annonces public !</p>
+                <AnnoncesApp />
             </Window>
 
             {/* Fenêtre de l'application Chat */}
